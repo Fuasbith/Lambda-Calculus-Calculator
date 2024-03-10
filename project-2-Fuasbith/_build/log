@@ -1,0 +1,119 @@
+# dune utop src
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/danieltruong/CMSC330/project-2-Fuasbith
+# Auto-detected concurrency: 10
+$ /opt/homebrew/bin/ocamlc.opt -config > /var/folders/6p/yk87j4p147dftn38645cl8z80000gn/T/dune_0e20ff_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/opt/homebrew/bin"
+#  ; ocaml = Ok External "/opt/homebrew/bin/ocaml"
+#  ; ocamlc = External "/opt/homebrew/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/opt/homebrew/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/opt/homebrew/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/opt/homebrew/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/danieltruong/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/opt/homebrew/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/danieltruong/CMSC330/project-2-Fuasbith"
+#        ; "INSIDE_DUNE" :
+#            "/Users/danieltruong/CMSC330/project-2-Fuasbith/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/danieltruong/CMSC330/project-2-Fuasbith/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/danieltruong/CMSC330/project-2-Fuasbith/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/danieltruong/CMSC330/project-2-Fuasbith/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/Users/danieltruong/.opam/default/lib" ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default = "/opt/homebrew/lib/ocaml"
+#      ; standard_library = "/opt/homebrew/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "clang"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "clang"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "clang"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "arm64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "aarch64-apple-darwin22.1.0"
+#      ; target = "aarch64-apple-darwin22.1.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -A -g -bin-annot -I src/.lcc.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open Lcc -o src/.lcc.objs/byte/lcc__Parser.cmo -c -impl src/parser.ml)
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -A -g -a -o src/lcc.cma src/.lcc.objs/byte/lcc.cmo src/.lcc.objs/byte/lcc__LccTypes.cmo src/.lcc.objs/byte/lcc__TokenTypes.cmo src/.lcc.objs/byte/lcc__Lexer.cmo src/.lcc.objs/byte/lcc__Utils.cmo src/.lcc.objs/byte/lcc__Parser.cmo src/.lcc.objs/byte/lcc__Eval.cmo)
+$ (cd _build/default && /opt/homebrew/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o src/.utop/utop.exe -output-complete-exe /opt/homebrew/lib/ocaml/compiler-libs/ocamlcommon.cma /opt/homebrew/lib/ocaml/compiler-libs/ocamlbytecomp.cma /opt/homebrew/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/danieltruong/.opam/default/lib/findlib/findlib.cma /Users/danieltruong/.opam/default/lib/findlib/findlib_top.cma /Users/danieltruong/.opam/default/lib/logs/logs.cma -I /opt/homebrew/lib/ocaml /Users/danieltruong/.opam/default/lib/lwt/lwt.cma /Users/danieltruong/.opam/default/lib/logs/logs_lwt.cma /opt/homebrew/lib/ocaml/unix.cma -I /opt/homebrew/lib/ocaml /opt/homebrew/lib/ocaml/bigarray.cma -I /opt/homebrew/lib/ocaml /Users/danieltruong/.opam/default/lib/ocplib-endian/ocplib_endian.cma /Users/danieltruong/.opam/default/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /opt/homebrew/lib/ocaml/threads/threads.cma -I /opt/homebrew/lib/ocaml /Users/danieltruong/.opam/default/lib/lwt/unix/lwt_unix.cma -I /Users/danieltruong/.opam/default/lib/lwt/unix /Users/danieltruong/.opam/default/lib/react/react.cma /Users/danieltruong/.opam/default/lib/lwt_react/lwt_react.cma /Users/danieltruong/.opam/default/lib/result/result.cma /Users/danieltruong/.opam/default/lib/uutf/uutf.cma /Users/danieltruong/.opam/default/lib/uucp/uucp.cma /Users/danieltruong/.opam/default/lib/uuseg/uuseg.cma /Users/danieltruong/.opam/default/lib/zed/zed.cma /Users/danieltruong/.opam/default/lib/trie/trie.cma /Users/danieltruong/.opam/default/lib/mew/mew.cma /Users/danieltruong/.opam/default/lib/mew_vi/mew_vi.cma /Users/danieltruong/.opam/default/lib/lambda-term/lambda_term.cma -I /Users/danieltruong/.opam/default/lib/lambda-term /Users/danieltruong/.opam/default/lib/utop/uTop.cma /opt/homebrew/lib/ocaml/str.cma -I /opt/homebrew/lib/ocaml src/lcc.cma src/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
+> /var/folders/6p/yk87j4p147dftn38645cl8z80000gn/T/build_ed4606_dune/camlobjf6a6ac.c:368615:14: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+> extern value caml_get_public_method();
+>              ^
+> /var/folders/6p/yk87j4p147dftn38645cl8z80000gn/T/build_ed4606_dune/camlobjf6a6ac.c:368797:14: warning: a function declaration without a prototype is deprecated in all versions of C and is not supported in C2x [-Wdeprecated-non-prototype]
+> extern value caml_set_oo_id();
+>              ^
+> 2 warnings generated.
